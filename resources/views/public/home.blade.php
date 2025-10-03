@@ -123,7 +123,7 @@ $reviews = [
 <div class="grid md:grid-cols-3 gap-6">
 <a href="{{ route('menus') }}" class="group bg-white rounded-2xl shadow p-6 hover:shadow-lg transition">
 <h3 class="font-semibold text-lg mb-1">Food Menus</h3>
-<p class="text-sm text-gray-600">Buffets, plated dinners, and custom cuisines.</p>
+<p class="text-sm text-gray-600">Buffets, plated dinners and custom cuisines.</p>
 <div class="mt-3 text-indigo-700 group-hover:underline">See menus →</div>
 </a>
 <a href="{{ route('decor') }}" class="group bg-white rounded-2xl shadow p-6 hover:shadow-lg transition">
