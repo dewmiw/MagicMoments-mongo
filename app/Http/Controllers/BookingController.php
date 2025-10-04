@@ -11,8 +11,13 @@ class BookingController extends Controller
 {
 public function create()
 {
-return view('public.book');
+    $menus       = \App\Models\FoodMenu::orderBy('name')->get();
+    $music       = \App\Models\MusicCategory::orderBy('name')->get();
+    $decorations = \App\Models\DecorationCategory::orderBy('name')->get();
+
+    return view('public.book', compact('menus','music','decorations'));
 }
+
 
 
 public function store(Request $request)
@@ -46,4 +51,8 @@ Booking::create($data);
 
 return redirect()->route('book.create')->with('success', 'Thank you! Your booking was submitted.');
 }
+
+
+
 }
+
